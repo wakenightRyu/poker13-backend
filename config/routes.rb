@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :hands
   resources :turns
   resources :games
   resources :players
