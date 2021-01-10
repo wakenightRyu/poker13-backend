@@ -1,6 +1,5 @@
 Card.destroy_all
 
-
 # DIAMONDS
 # ========
 twoDiamonds = Card.create(name: 'twoDiamonds', rank: "2", suite: 'Diamonds', value: 2, img_link: "https://user-images.githubusercontent.com/18652395/103258294-844a0c00-4962-11eb-9835-18727a0b6dd8.png")
@@ -115,5 +114,28 @@ queenSpades = Card.create(name: 'queenSpades', rank: "Q", suite: 'Spades', value
 kingSpades = Card.create(name: 'kingSpades', rank: "K", suite: 'Spades', value: 13, img_link: "https://user-images.githubusercontent.com/18652395/103258314-87dd9300-4962-11eb-8341-b98fb263a0ed.png")
 
 aceSpades = Card.create(name: 'aceSpades', rank: "A", suite: 'Spades', value: 14, img_link: "https://user-images.githubusercontent.com/18652395/103258313-87dd9300-4962-11eb-863b-f0c62d441142.png")
+
+
+PlayType.destroy_all
+
+single = PlayType.create(name: 'single')
+
+pair = PlayType.create(name: 'pair')
+
+twoPair = PlayType.create(name: 'two pair')
+
+threeOfAKind = PlayType.create(name: 'three of a kind')
+
+straight = PlayType.create(name: 'straight')
+
+flush = PlayType.create(name: 'flush')
+
+fullHouse = PlayType.create(name: 'full house')
+
+fourOfAKind = PlayType.create(name: 'four of a kind')
+
+straightFlush = PlayType.create(name: 'straight flush')
+
+royalFlush = PlayType.create(name: 'royal flush')
 
 
