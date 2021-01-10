@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :losses
   resources :wins
   resources :plays
   resources :hands
